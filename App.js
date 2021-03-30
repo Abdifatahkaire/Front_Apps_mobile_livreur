@@ -9,53 +9,6 @@ import Tabs from './source/Navigation/Navigation';
 
 
 
-/*function Homes({ navigation }){
-  
-  
-    return (
-
-      <ScrollView style={{height:2000}}>
-            <View style={styles.homeScreemcontainer}>
-
-            <View style={{display:'flex',borderWidth:2,borderColor:'blue'}}>
-            
-                      <TextInput style={styles.buttons1} placeholder='taper un text'/>
-                     
-                     
-                      
-                    <TouchableOpacity
-                      style={styles.buttons2}
-                      onPress={()=>{navigation.navigate('Connecter')}}
-                    >
-                      <Text style={{color:'forestgreen'}}>Se Connecter</Text>
-                    </TouchableOpacity>
-            </View>
-            <View style={{display:'flex',borderWidth:2,borderColor:'blue'}}>
-            
-                      <TextInput style={styles.buttons1} placeholder='taper un text'/>
-                     
-                     
-                      
-                    <TouchableOpacity
-                      style={styles.buttons2}
-                      onPress={()=>{navigation.navigate('Connecter')}}
-                    >
-                      <Text style={{color:'forestgreen'}}>Se Connecter</Text>
-                    </TouchableOpacity>
-            </View>
-            
-          
-          </View>
-      </ScrollView>
-      
-      
-      
-    )
-}*/
-
-
-
-
 
 
 

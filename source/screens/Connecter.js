@@ -5,16 +5,29 @@ import { Button, View, Text,TextInput,Image,Tab,TouchableOpacity,Alert, ScrollVi
 export default class Connecter extends React.Component {
 
    constructor(props){
+
        super(props);
+       this.state={
+        isFocus1:true,
+        isFocus2:true}
+        
    }
+
+   handleFocus1 = () => this.setState({isFocused1: true})
+
+    handleBlur1 = () => this.setState({isFocused1: false})
+
+    handleFocus2 = () => this.setState({isFocused2: true})
+
+    handleBlur2 = () => this.setState({isFocused2: false})
 
     render(){
 
         return (<ScrollView>
                <View style={styles.connecterContainer}>
                      <View style={styles.connecterContent1}>
-                        <TextInput style={{borderWidth:1,borderColor:'forestgreen',marginBottom:15}} placeholder='Email'/>
-                        <TextInput style={{borderWidth:1,borderColor:'forestgreen',marginBottom:15}} placeholder='mot de passe'/>
+                        <TextInput onFocus={this.handleFocus1}  onBlur={this.handleBlur1} style={[{marginBottom:15},{borderBottomColor: this.state.isFocused1  ? 'forestgreen' : 'black',borderBottomWidth:1,borderRadius:4}]} placeholder='Email'/>
+                        <TextInput onFocus={this.handleFocus2}  onBlur={this.handleBlur2}  style={[{marginBottom:15},{borderBottomColor: this.state.isFocused2  ? 'forestgreen' : 'black',borderBottomWidth:1,borderRadius:4}]} placeholder='mot de passe'/>
                         <TouchableOpacity
                                     style={{backgroundColor:'forestgreen',paddingBottom:10,paddingTop:10,borderRadius:4,display:'flex',alignItems:'center'}}
                                     onPress={()=>{}}
